@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="renderer" content="webkit">
+		<title>MyWebsite</title>
+		<link rel="stylesheet" type="text/css" href="../bootstrap3.3.7/css/bootstrap.min.css"/>
+		<link rel="Stylesheet" type="text/css" href="./css/FirstIndex.css" />  
+		<link rel="Stylesheet" type="text/css" href="./css/LastIndex.css" />
+		<link rel="stylesheet" type="text/css" href="./css/tooltipster.css" />
+		<link rel="stylesheet" type="text/css" href="./css/tooltipster-noir.css" />
+		<link rel="stylesheet" type="text/css" href="./css/Welcome_page.css" />
+		<!--[if lte IE 8]>
+		<style type="text/css">
+			html,body{width:100%; height:100%; overflow:scroll}
+			.section-btn{display:none;}
+		</style>
+		<![endif]-->
+	</head>
+	<body>
+		<section class="section-wrap">
+		
+			<div class="section section-1">
+				<div class="wrapper ">	
+					<div class="container">
+						<form class="loginForm">
+							<p>WELCOME</p>
+							<input type="text" placeholder="User Name" name="user" id="login_user" >
+							<input type="password" placeholder="Password" name="pwd" id="login_pwd">
+							<button id="login-button" class="button" type="button" value="Login In">Login In</button>
+							<button id="switch-reg" class="button" type="button" >Sign Up</button>
+						</form>
+						<form class="registerForm" style="display:none;margin-top: 10px;">
+							<input type="text" placeholder="User Name" name="reg_user" id="reg_user" autocomplete="off" >
+							<span id="tableHint" style="height: 10px;color: red;margin-top: 10px;"></span>
+							<input type="text" placeholder="Email Address" name="reg_email" id="reg_email" autocomplete="off">
+							<input type="password" placeholder="New Password" name="reg_pwd" id="reg_pwd" autocomplete="off">
+							<input type="password" placeholder="Re-enter New Password" name="repwd" id="reg_repwd">
+							<button id="switch-login" class="button" type="button" >Back to Login </button>
+							<button id="register-button" class="button" type="button" >Sign up</button>
+						</form>
+					</div>					
+				</div>
+			</div>
+			
+			<div class="section section-2">
+				<div class="title">
+					<p class="tit">Share your story about food</p>
+				</div>
+			</div>
+			
+			<div class="section section-3">
+				<div class="title">
+					<div class="finalTitle">Let Food Get Us Connected</div>
+					<div class="tryNow" id="toTop">Join Us Now</div>
+				</div>
+			</div>
+			
+		</section>
+		
+		<!-- Section Button -->
+		<ul class="section-btn">
+	  		<li class="on"></li>
+	  		<li></li>
+	  		<li></li>
+		</ul>
+		
+		<script type="text/javascript" src="../jquery/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="../jquery/jquery.tooltipster.min.js"></script><!-- Message Tips-->
+		<script type="text/javascript" src="./js/IndexRoll.js"></script> <!-- Scrolling & back to top -->
+		<script type="text/javascript" src="./js/Register.js"></script><!-- New user registeration -->
+		<script type="text/javascript" src="./js/Login.js"></script><!-- User Login -->
+		
+	</body>
+</html>
